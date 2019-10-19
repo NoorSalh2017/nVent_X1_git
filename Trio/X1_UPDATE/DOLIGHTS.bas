@@ -1,0 +1,28 @@
+IF (VR(16) = 1) THEN ' if paused
+WHILE (VR(16) = 1)
+IF (IN(31)) THEN
+   OP(31,0)
+ELSE
+    OP(31,1)
+ENDIF
+WA(150)
+WEND
+OP(31,1)
+ELSE
+
+IF (IN(31) = 1) THEN
+OP(31,0)
+ELSE
+
+
+OP(31,1)
+WA(150)
+OP(31,0)
+WA(150)
+OP(31,1)
+WA(150)
+OP(31,0)
+WA(150)
+OP(31,1)
+ENDIF
+ENDIF
